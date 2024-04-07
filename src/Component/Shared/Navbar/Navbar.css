@@ -1,0 +1,15 @@
+/* .rotated-image {
+  transform: rotate(-130.72deg);
+} */
+.nav-link {
+  text-decoration: none;
+}
+.rounded-nav-link {
+  border-radius: 56px;
+}
+.rounded-button {
+  border-radius: 100px;
+}
+/* .navbar-start {
+  width: 131.25px;
+} */
