@@ -23,7 +23,7 @@ export default {
           // => @media (min-width: 768px and max-width: 1023px) { ... }
           lg: { min: '1024px', max: '1279px' },
           // => @media (min-width: 1024px and max-width: 1279px) { ... }
-          xl: { min: '1332px', max: '1440px' },
+          xl: { min: '1280px', max: '1440px' },
           // => @media (min-width: 1280px and max-width: 1535px) { ... }
           '2xl': { min: '1536px', max: '1919px' },
           // => @media (min-width: 1536px and max-width: 1919px) { ... }

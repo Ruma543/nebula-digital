@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../../../../public/banner.jpg';
+import img from '../../../../../public/banner.webp';
 import { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
-const bannerUrl = 'https://i.ibb.co/k5Sd1nG/banner.jpg';
+// const bannerUrl = 'https://i.ibb.co/k5Sd1nG/banner.jpg';
 const Banner = () => {
   return (
     <div
@@ -28,7 +28,7 @@ const Banner = () => {
           <div
             className="h-full  "
             style={{
-              backgroundImage: `url(${bannerUrl})`,
+              backgroundImage: `url(${img})`,
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'center',

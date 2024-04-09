@@ -19,7 +19,7 @@ const Insight = () => {
   const values = [
     {
       id: 1,
-      img: '../../../../../public/64e7f73a2c8f38d6ca0c4a8c_Image-1.png.png',
+      img: 'https://i.ibb.co/bPdxWSv/64e7f73a2c8f38d6ca0c4a8c-Image-1-png-2.png',
       value: 'Data Maturity Assessment',
       text1: 'Multi Touch Attribution (MTA) Model',
       text2:
@@ -27,7 +27,7 @@ const Insight = () => {
     },
     {
       id: 2,
-      img: '../../../../../public/64e7f73a2c8f38d6ca0c4a8c_Image-1.png (1).png',
+      img: 'https://i.ibb.co/VqQ7Z1X/64e7f73a2c8f38d6ca0c4a8c-Image-1-png-3.png',
       value: 'Technology Platform',
       text1: 'AI assistant using LLM model',
       text2:
@@ -35,7 +35,7 @@ const Insight = () => {
     },
     {
       id: 3,
-      img: '../../../../../public/64e7f73a6d9402690c1aa6f8_Image-2.png.png',
+      img: 'https://i.ibb.co/QJ84DP6/64e7f73a2c8f38d6ca0c4a8c-Image-1-png-4.png',
       value: 'Data Analytics & AI Solutions',
       text1: 'Personalized product and service recommendation',
       text2:
@@ -43,7 +43,7 @@ const Insight = () => {
     },
     {
       id: 4,
-      img: '../../../../../public/64e7f73a6d9402690c1aa6f8_Image-2.png (1).png',
+      img: 'https://i.ibb.co/GHMJJLZ/64e7f73a2c8f38d6ca0c4a8c-Image-1-png-5.png',
       value: 'Cyber Security Solutions',
       text1: 'Personalized and adaptive learning with AI agent',
       text2:
@@ -51,7 +51,7 @@ const Insight = () => {
     },
     {
       id: 1,
-      img: '../../../../../public/64e7f73a2c8f38d6ca0c4a8c_Image-1.png.png',
+      img: 'https://i.ibb.co/QJ84DP6/64e7f73a2c8f38d6ca0c4a8c-Image-1-png-4.png',
       value: 'Data Maturity Assessment',
       text1: 'Multi Touch Attribution (MTA) Model',
       text2:
@@ -143,11 +143,11 @@ const Insight = () => {
           >
             {values.map((data, id) => (
               <div
-                className=" rounded-[24px]  xl:rounded-[22.5px]  2xl:rounded-[30px] "
+                className="border-8 border-[#EDF0F5]  rounded-[24px]  xl:rounded-[22.5px]  2xl:rounded-[30px] "
                 key={id}
               >
                 <img
-                  className="w-full h-[325.67px] sm:h-[389px] xl:h-[364.5px] 2xl:h-[486px] mb-[20.9px] sm:mb-[24px] xl:mb-[22.5px] 2xl:mb-[30px]"
+                  className="w-full h-[325.67px] sm:h-[389px] xl:h-[364.5px] 2xl:h-[486px] mb-[20.9px] sm:mb-[24px] xl:mb-[22.5px] 2xl:mb-[30px]  rounded-[24px]  xl:rounded-[22.5px]  2xl:rounded-[30px]"
                   src={data.img}
                   alt=""
                 />
@@ -155,7 +155,7 @@ const Insight = () => {
                   <h3 className="text-[#091F5B] text-[19.2px] leading-[23.24px] font-bold tracking-[-0.03em] xl:text-[22.5px] xl:leading-[27.23px] xl:font-bold xl:tracking-[-0.03em] 2xl:text-[30px] 2xl:leading-[36.31px] 2xl:font-bold 2xl:tracking-[-0.03em] ">
                     {data.text1}
                   </h3>
-                  <h3 className="text-[#091F5B] text-[19.2px] leading-[23.24px] font-normal tracking-[-0.03em] xl:text-[18px] xl:leading-[21.78px] xl:font-normal xl:tracking-[-0.03em] 2xl:text-[24px] 2xl:leading-[29.5px] 2xl:font-normal 2xl:tracking-[-0.03em]">
+                  <h3 className="text-[#091F5B] text-[19.2px] leading-[23.24px] font-normal tracking-[-0.03em] xl:text-[18px] xl:leading-[21.78px] xl:font-normal xl:tracking-[-0.03em] 2xl:text-[24px] 2xl:leading-[29.5px] 2xl:font-normal 2xl:tracking-[-0.03em] py-4">
                     {data.text2}
                   </h3>
                   <h3 className="text-[#091F5B] text-[16px] leading-[19.36px] font-bold tracking-[-0.03em] xl:text-[18px] xl:leading-[21.78px] xl:font-bold xl:tracking-[-0.03em] 2xl:text-[24px] 2xl:leading-[29.5px] 2xl:font-bold 2xl:tracking-[-0.03em] underline">

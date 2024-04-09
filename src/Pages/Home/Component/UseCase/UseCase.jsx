@@ -13,7 +13,7 @@ const UseCase = () => {
   const values = [
     {
       id: 1,
-      img: '../../../../../public/64e7f73a2c8f38d6ca0c4a8c_Image-1.png.png',
+      img: 'https://i.ibb.co/cDCHHLF/64e7f73a2c8f38d6ca0c4a8c-Image-1-png.webp',
       value: 'Data Maturity Assessment',
       text1: 'Multi Touch Attribution (MTA) Model',
       text2:
@@ -21,7 +21,7 @@ const UseCase = () => {
     },
     {
       id: 2,
-      img: '../../../../../public/64e7f73a2c8f38d6ca0c4a8c_Image-1.png (1).png',
+      img: 'https://i.ibb.co/5Gd1qhq/64e7f73a6d9402690c1aa6f8-Image-2-png-1.webp',
       value: 'Technology Platform',
       text1: 'AI assistant using LLM model',
       text2:
@@ -29,7 +29,7 @@ const UseCase = () => {
     },
     {
       id: 3,
-      img: '../../../../../public/64e7f73a6d9402690c1aa6f8_Image-2.png.png',
+      img: 'https://i.ibb.co/jfpVGqM/64e7f73a6d9402690c1aa6f8-Image-2-png.webp',
       value: 'Data Analytics & AI Solutions',
       text1: 'Personalized product and service recommendation',
       text2:
@@ -37,19 +37,11 @@ const UseCase = () => {
     },
     {
       id: 4,
-      img: '../../../../../public/64e7f73a6d9402690c1aa6f8_Image-2.png (1).png',
+      img: 'https://i.ibb.co/Dr8dtS7/64e7f73a2c8f38d6ca0c4a8c-Image-1-png-1.webp ',
       value: 'Cyber Security Solutions',
       text1: 'Personalized and adaptive learning with AI agent',
       text2:
         'A reinforcement learning model that dynamically adapts course content delivery based on individual learner interactions.',
-    },
-    {
-      id: 1,
-      img: '../../../../../public/64e7f73a2c8f38d6ca0c4a8c_Image-1.png.png',
-      value: 'Data Maturity Assessment',
-      text1: 'Multi Touch Attribution (MTA) Model',
-      text2:
-        'The model estimates the impact of digital marketing channels on signups, using MTA scores to optimize campaigns.',
     },
   ];
 
@@ -135,11 +127,11 @@ const UseCase = () => {
         >
           {values.map((data, id) => (
             <div
-              className=" rounded-[24px]  xl:rounded-[22.5px]  2xl:rounded-[30px] "
+              className=" rounded-[24px]  xl:rounded-[22.5px]  2xl:rounded-[30px] border-8 border-white"
               key={id}
             >
               <img
-                className="w-full h-[325.67px] sm:h-[389px] xl:h-[364.5px] 2xl:h-[486px] mb-[20.9px] sm:mb-[24px] xl:mb-[22.5px] 2xl:mb-[30px]"
+                className="w-full h-[325.67px] sm:h-[389px] xl:h-[364.5px] 2xl:h-[486px] mb-[20.9px] sm:mb-[24px] xl:mb-[22.5px] 2xl:mb-[30px] rounded-[24px]  xl:rounded-[22.5px]  2xl:rounded-[30px] object-cover"
                 src={data.img}
                 alt=""
               />

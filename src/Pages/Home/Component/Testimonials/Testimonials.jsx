@@ -123,7 +123,10 @@ const Testimonials = () => {
           2xl:gap-5"
       >
         {values.map((data, index) => (
-          <div className="relative" key={index}>
+          <div
+            className="relative border-8 border-white rounded-[30px]"
+            key={index}
+          >
             <div className=" w-full  h-[211px] xl:h-[393px] 2xl:h-[524px] rounded-[24px] xl:rounded-[22px] 2xl:rounded-[30px] relative">
               <ReactPlayer
                 url={data.video}
@@ -133,6 +136,7 @@ const Testimonials = () => {
                 muted={playingIndex !== index}
                 playing={playingIndex === index}
                 controls={false}
+                style={{ borderRadius: 30 }}
               />
               {!playingIndex && renderPlayButton(index)}
             </div>
