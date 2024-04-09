@@ -9,8 +9,8 @@ import Footer from '../../../../Component/Shared/Footer/Footer';
 
 const Message = () => {
   return (
-    <div className=" text-gradient z-50 absolute w-full -translate-x-1/2 transform -translate-y-1/2  bg-white rounded-t-[32px] xl:rounded-t-[52.5px] 2xl:rounded-t-[70px] text-primary -mt-28 xl:-mt-24 2xl:-mt-25 pt-10 xl:pt-18 2xl:pt-24  ">
-      {/* pt-10 xl:pt-18 2xl:pt-24 */}
+    <div className=" text-gradient z-50 absolute w-full bg-white rounded-t-[32px] xl:rounded-t-[52.5px] 2xl:rounded-t-[70px] text-primary -mt-28 xl:-mt-24 2xl:-mt-25 pt-10 xl:pt-18 2xl:pt-24  ">
+      {/* pt-10 xl:pt-18 2xl:pt-24  xl:max-w-[1440px] mx-auto 2xl:max-w-[1920px] */}
       <h3 className="px-[20px]  xl:px-[54px] 2xl:px-[72px] max-w-[390px] h-[170px] xl:max-w-[1332px] xl:h-[192px] 2xl:max-w-[1776px] 2xl:h-[255px] text-[25px] sm:text-[28px] sm:leading-[33.89px] sm:font-normal sm:tracking-[-0.03em] xl:text-[55px] xl:leading-[63.75px] xl:font-normal  xl:tracking-[-0.03em] 2xl:text-[80px] 2xl:leading-[85px] 2xl:font-normal 2xl:tracking-[-0.03em] leading-[33.89px] text-[#091F5B] mb-[40px] xl:mb-[72px] 2xl:mb-[96px]">
         {/* sm:max-w-[390px] xl:max-w-[1332px] 2xl:max-w-[1776px] */}
         <span
