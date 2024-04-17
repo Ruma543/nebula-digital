@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import SectionTitle from '../../../../Component/Shared/SectionTitle/SectionTitle';
 // slider
 import Slider from 'react-slick';
@@ -11,6 +11,9 @@ import SlideCard from './SlideCard';
 
 const OurSolutions = () => {
   const sliderRef = useRef(null);
+  // for button disable
+  const [showPreviousButton, setShowPreviousButton] = useState(false);
+  const [showNextButton, setShowNextButton] = useState(true);
   const values = [
     {
       id: 1,
@@ -66,6 +69,17 @@ const OurSolutions = () => {
         'Enhance cyber defense and compliance through tailored strategies and training.',
     },
   ];
+  // for button disable
+  useEffect(() => {
+    const slider = sliderRef.current;
+    if (slider) {
+      const currentSlide = slider.innerSlider.state.currentSlide;
+      setShowPreviousButton(currentSlide !== 0);
+      setShowNextButton(
+        currentSlide !== slider.innerSlider.state.slideCount - 1
+      );
+    }
+  }, []);
   const handlePrevious = () => {
     sliderRef.current.slickPrev();
   };
@@ -73,9 +87,14 @@ const OurSolutions = () => {
   const handleNext = () => {
     sliderRef.current.slickNext();
   };
+  // for button hidden
+  const afterChangeHandler = currentSlide => {
+    setShowPreviousButton(currentSlide !== 0);
+    setShowNextButton(currentSlide < values.length - 4);
+  };
   var settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -106,6 +125,7 @@ const OurSolutions = () => {
         },
       },
     ],
+    afterChange: afterChangeHandler,
   };
   // console.log(data.color);
   return (
@@ -120,23 +140,30 @@ const OurSolutions = () => {
               className="bg-gradient-to-r from-blue-500 to-blue-800 text-transparent"
               style={{ backgroundClip: 'text' }}
             >
-              a strong data foundation and AI capabilities
+              a strong <br className="hidden lg:block" /> data foundation and AI
+              capabilities
             </span>
-            <div className="hidden md:block  xl:absolute 2xl:absolute xl:-bottom-2 xl:right-0 2xl:-bottom-2 2xl:right-0 ">
-              <button className="xl:mr-3 2xl:mr-4" onClick={handlePrevious}>
-                <img
-                  className="xl:w-[42px] xl:h-[42px] 2xl:w-[56px] 2xl:h-[56px]"
-                  src={arrow1}
-                  alt=""
-                />
-              </button>
-              <button onClick={handleNext}>
-                <img
-                  className="xl:w-[42px] xl:h-[42px] 2xl:w-[56px] 2xl:h-[56px]"
-                  src={arrow2}
-                  alt=""
-                />
-              </button>
+            <div className="hidden lg:block  xl:absolute 2xl:absolute xl:-bottom-2 xl:right-0 2xl:-bottom-2 2xl:right-0 ">
+              {/* Previous button */}
+              {showPreviousButton && (
+                <button className="xl:mr-3 2xl:mr-4" onClick={handlePrevious}>
+                  <img
+                    className="xl:w-[42px] xl:h-[42px] 2xl:w-[56px] 2xl:h-[56px]"
+                    src={arrow1}
+                    alt=""
+                  />
+                </button>
+              )}
+              {/* next button */}
+              {showNextButton && (
+                <button onClick={handleNext}>
+                  <img
+                    className="xl:w-[42px] xl:h-[42px] 2xl:w-[56px] 2xl:h-[56px]"
+                    src={arrow2}
+                    alt=""
+                  />
+                </button>
+              )}
             </div>
           </h3>
         </div>
@@ -144,11 +171,18 @@ const OurSolutions = () => {
           className="grid grid-cols-1 xl:grid-cols-4 xl:gap-[15px] 2xl:grid-cols-4 
           2xl:gap-[20px]"
         > */}
-        <Slider {...settings} ref={sliderRef}>
+        <div className="hidden lg:block">
+          <Slider {...settings} ref={sliderRef}>
+            {values.map((data, id) => (
+              <SlideCard key={id} data={data}></SlideCard>
+            ))}
+          </Slider>
+        </div>
+        <div className="grid grid-cols-1  md:grid-cols-2 lg:hidden">
           {values.map((data, id) => (
             <SlideCard key={id} data={data}></SlideCard>
           ))}
-        </Slider>
+        </div>
       </div>
     </div>
     // </div>

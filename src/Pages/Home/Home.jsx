@@ -4,12 +4,14 @@ import Message from './Component/Message/Message';
 import SectionTitle from '../../Component/Shared/SectionTitle/SectionTitle';
 import OurClient from './Component/OurClient/OurClient';
 import Insight from './Component/Insight/Insight';
+import HomeAllContents from './Component/HomeAllContents/HomeAllContents';
 
 const Home = () => {
   return (
-    <div>
+    <div className="w-full">
       <Banner></Banner>
-      <Message></Message>
+      <HomeAllContents></HomeAllContents>
+      {/* <Message></Message> */}
     </div>
   );
 };

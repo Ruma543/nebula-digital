@@ -12,12 +12,13 @@ const Video = () => {
     });
   }, []);
   return (
-    <div>
-      <div className="hidden lg:block">for lg</div>
-      <div className="flex lg:hidden">
-        <h3>1</h3> <h3>2</h3>
-      </div>
-    </div>
+    <h3>video</h3>
+    // <div>
+    //   <div className="hidden lg:block">for lg</div>
+    //   <div className="flex lg:hidden">
+    //     <h3>1</h3> <h3>2</h3>
+    //   </div>
+    // </div>
     // <div>
     //   <a
     //     className="my-video-links"
