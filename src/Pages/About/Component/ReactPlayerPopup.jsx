@@ -78,40 +78,16 @@ const ReactPlayerPopup = () => {
   };
 
   const togglePlay = index => {
-    // setPlayingIndex(index === playingIndex ? null : index);
-    // setModalOpen(true); // Open modal when play button is clicked
     setPlayingIndex(index);
     setModalOpen(true);
   };
 
   const closeModal = () => {
-    // setModalOpen(false);
-    // setPlayingIndex(null);
     setModalOpen(false);
     setPlayingIndex(null);
   };
 
   const renderPlayButton = index => {
-    // if (!modalOpen) {
-    //   return (
-    //     <div className="relative">
-    //       <img
-    //         src={values[index].img}
-    //         style={{ overflow: 'hidden' }}
-    //         alt="Thumbnail"
-    //         className="w-full h-full object-cover rounded-[24px] xl:rounded-[22px] 2xl:rounded-[30px]"
-    //       />
-    //       <img
-    //         src={playButton}
-    //         alt="Play"
-    //         className="absolute inset-0 m-auto w-[40px] h-[40px] xl:w-[111px] xl:h-[111px] 2xl:w-[148px] 2xl:h-[148px] cursor-pointer"
-    //         onClick={() => togglePlay(index)}
-    //       />
-    //     </div>
-    //   );
-    // } else {
-    //   return null;
-    // }
     if (!modalOpen) {
       return (
         <img
