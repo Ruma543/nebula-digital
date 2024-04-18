@@ -5,7 +5,7 @@ const DigitalPart = () => {
   return (
     <div className="mb-[64px] 1xs:mb-[64px] sm:mb-[64px] lg:mb-[36px] 2xl:mb-[48px] lg:flex  lg:justify-between  bg-[#FFFFFF] rounded-[24px] 1xs:rounded-[24px] sm:rounded-[24px] lg:rounded-[36px] 2xl:rounded-[48px]">
       {/* lg:gap-[125.25px] 2xl:gap-[137px] */}
-      <div className=" py-[40px] pl-[16px] 1xs:py-[40px] 1xs:pl-[16px] sm:py-[40px] sm:pl-[16px] lg:py-[72px] lg:pl-[48px] 2xl:py-[96px] 2xl:pl-[64px]">
+      <div className=" py-[40px] px-[16px] 1xs:py-[40px] 1xs:px-[16px] sm:py-[40px] sm:px-[16px] lg:py-[72px] lg:px-[48px] 2xl:py-[96px] 2xl:px-[64px]">
         <div className="mb-[30px] 1xs:mb-[30px] sm:mb-[30px] lg:mb-[30px] 2xl:mb-[40px] flex justify-center lg:justify-start items-center gap-[16px] ">
           <SectionTitle title="Our Solutions"></SectionTitle>
           <SectionTitle title="Data Transformation"></SectionTitle>
