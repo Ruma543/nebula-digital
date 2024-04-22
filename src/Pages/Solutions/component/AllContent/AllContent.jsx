@@ -20,7 +20,12 @@ const AllContent = () => {
       <DigitalPart></DigitalPart>
       <ExpertPart1></ExpertPart1>
       <ExpertPart2></ExpertPart2>
-      <Contact></Contact>
+      <div className=" mb-20 md:mb-20 lg:mb-1 ">
+        {/* pb-[60px] 1xs:pb-[60px] sm:pb-[60px] lg:pb-[15px] 2xl:pb-[15px] */}
+        {/* mb-20 md:mb-20 lg:mb-10 */}
+        {/* have to solve this issue */}
+        <Contact></Contact>
+      </div>
     </div>
   );
 };

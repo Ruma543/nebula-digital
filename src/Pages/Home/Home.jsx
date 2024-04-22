@@ -11,7 +11,6 @@ const Home = () => {
     <div className="w-full">
       <Banner></Banner>
       <HomeAllContents></HomeAllContents>
-      {/* <Message></Message> */}
     </div>
   );
 };

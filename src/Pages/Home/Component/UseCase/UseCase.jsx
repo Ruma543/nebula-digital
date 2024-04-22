@@ -82,12 +82,12 @@ const UseCase = () => {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
@@ -96,18 +96,12 @@ const UseCase = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
-          initialSlide: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
         },
       },
     ],
@@ -118,18 +112,19 @@ const UseCase = () => {
       <SectionTitle title="Use Cases"></SectionTitle>
       <div className=" mt-[24px] xl:mt-[30px] 2xl:mt-[40px]  w-full">
         <div className=" relative mb-[32px] xl:mb-[36px] 2xl:mb-[48px]">
-          <h3 className="text-[20.09px]  leading-[24.32px] font-normal tracking-[-0.03em] sm:text-[24px] sm:leading-[29.05px] sm:font-normal sm:tracking-[-0.03em] xl:text-[60px] xl:leading-[67.5px] xl:font-normal  xl:tracking-[-0.03em] 2xl:text-[80px] 2xl:leading-[90px] 2xl:font-normal 2xl:tracking-[-0.03em]  text-[#091F5B]">
+          <h3 className="text-[#091F5B] font-normal tracking-[-0.03em] sm:w-full sm:h-full xl:w-full xl:h-full 2xl:w-full 2xl:h-full text-[25px] 1xs:text-[28px] 1xs:leading-[33.89px] sm:text-[28px] sm:leading-[33.89px] md:text-[40px] md:leading-[45px] xl:text-[50px] xl:leading-[60px]  2xl:text-[70px] 2xl:leading-[75px] ">
+            {/*text-[#091F5B] font-normal tracking-[-0.03em] sm:w-full sm:h-full xl:w-full xl:h-full 2xl:w-full 2xl:h-full text-[25px] sm:text-[28px] sm:leading-[33.89px] md:text-[40px] md:leading-[45px] xl:text-[50px] xl:leading-[60px]  2xl:text-[70px] 2xl:leading-[75px] */}
             See use cases of how we can{' '}
             <span
-              className="bg-gradient-to-r from-blue-500 to-blue-800 text-transparent"
+              className="bg-gradient-to-r from-[#00b2ff] to-[#0057ff] text-transparent"
               style={{ backgroundClip: 'text' }}
             >
               empower your organizations
             </span>{' '}
             and create meaningful impact
-            <div className="hidden lg:block  xl:absolute 2xl:absolute xl:-bottom-2 xl:right-0 2xl:-bottom-2 2xl:right-0 ">
-              {/* Previous button */}
-              {showPreviousButton && (
+            {/* <div className="hidden xl:block  xl:absolute 2xl:absolute xl:-bottom-2 xl:right-0 2xl:-bottom-2 2xl:right-0 "> */}
+            {/* Previous button */}
+            {/* {showPreviousButton && (
                 <button className="xl:mr-3 2xl:mr-4" onClick={handlePrevious}>
                   <img
                     className="xl:w-[42px] xl:h-[42px] 2xl:w-[56px] 2xl:h-[56px]"
@@ -137,9 +132,9 @@ const UseCase = () => {
                     alt=""
                   />
                 </button>
-              )}
-              {/* next button */}
-              {showNextButton && (
+              )} */}
+            {/* next button */}
+            {/* {showNextButton && (
                 <button onClick={handleNext}>
                   <img
                     className="xl:w-[42px] xl:h-[42px] 2xl:w-[56px] 2xl:h-[56px]"
@@ -147,12 +142,59 @@ const UseCase = () => {
                     alt=""
                   />
                 </button>
+              )} */}
+            {/* </div> */}
+            <div className="hidden xl:block  xl:absolute 2xl:absolute xl:-bottom-2 xl:right-0 2xl:-bottom-2 2xl:right-0 ">
+              {/* Previous button */}
+              {showPreviousButton ? (
+                <button className="xl:mr-3 2xl:mr-4" onClick={handlePrevious}>
+                  <img
+                    className="xl:w-[42px] xl:h-[42px] 2xl:w-[56px] 2xl:h-[56px]"
+                    src={arrow1}
+                    alt=""
+                  />
+                </button>
+              ) : (
+                <div className="relative inline-block">
+                  <div className="absolute inset-0 bg-white opacity-60"></div>
+                  <button
+                    className=" xl:mr-3 2xl:mr-4"
+                    onClick={handlePrevious}
+                  >
+                    <img
+                      className="xl:w-[42px] xl:h-[42px] 2xl:w-[56px] 2xl:h-[56px]"
+                      src={arrow1}
+                      alt=""
+                    />
+                  </button>
+                </div>
+              )}
+              {/* next button */}
+              {showNextButton ? (
+                <button onClick={handleNext}>
+                  <img
+                    className="xl:w-[42px] xl:h-[42px] 2xl:w-[56px] 2xl:h-[56px]"
+                    src={arrow2}
+                    alt=""
+                  />
+                </button>
+              ) : (
+                <div className="relative inline-block">
+                  <div className="absolute inset-0 bg-white opacity-60"></div>
+                  <button onClick={handleNext}>
+                    <img
+                      className=" xl:w-[42px] xl:h-[42px] 2xl:w-[56px] 2xl:h-[56px]"
+                      src={arrow2}
+                      alt=""
+                    />
+                  </button>
+                </div>
               )}
             </div>
           </h3>
         </div>
 
-        <div className="hidden lg:block">
+        <div className="hidden xl:block">
           <Slider
             {...settings}
             ref={sliderRef}
@@ -164,7 +206,7 @@ const UseCase = () => {
             ))}
           </Slider>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:hidden">
+        <div className="grid grid-cols-1 gap-5 1xs:gap-5 sm:gap-5 md:grid-cols-2 lg:grid-cols-3 xl:hidden">
           {values.map((data, id) => (
             <UseCaseCard key={id} data={data}></UseCaseCard>
           ))}

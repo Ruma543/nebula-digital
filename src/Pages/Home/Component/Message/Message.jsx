@@ -1,47 +1,21 @@
-import OurSolutions from '../OurSolutions/OurSolutions';
-import OurClient from '../OurClient/OurClient';
-import UseCase from '../UseCase/UseCase';
-import WeCreateMessage from '../WeCreateMessage/WeCreateMessage';
-import Testimonials from '../Testimonials/Testimonials';
-import Insight from '../Insight/Insight';
-import Footer from '../../../../Component/Shared/Footer/Footer';
 // import './Message.css';
 
 const Message = () => {
   return (
-    <div className="pt-10 px-[20px] 1xs:pt-10 1xs:px-[20px]  sm:pt-10 sm:px-[20px] xl:px-[54px] xl:pt-[51px]  2xl:px-[72px] 2xl:pt-[68px] mb-[40px] xl:mb-[72px] 2xl:mb-[96px]">
-      <h3 className="max-w-[390px] 1xs:max-w-[390px] sm:max-w-[390px] xl:max-w-[1332px] 2xl:max-w-[1776px] h-[170px]  xl:h-[192px]  2xl:h-[255px] text-[25px] sm:text-[28px] sm:leading-[33.89px] sm:font-normal sm:tracking-[-0.03em] xl:text-[55px] xl:leading-[63.75px] xl:font-normal  xl:tracking-[-0.03em] 2xl:text-[80px] 2xl:leading-[85px] 2xl:font-normal 2xl:tracking-[-0.03em] leading-[33.89px] text-[#091F5B] ">
-        {/*max-w-[390px] xl:max-w-[1332px] 2xl:max-w-[1776px] */}
+    <div className=" pt-10 px-[20px] 1xs:pt-10 1xs:px-[20px]  sm:pt-10 sm:px-[20px] lg:px-[54px] lg:pt-[51px]  2xl:px-[72px] 2xl:pt-[68px] mb-[40px] lg:mb-[72px] 2xl:mb-[96px] ">
+      <h3 className="w-full  tracking-[-0.03em] font-normal text-[#091F5B] text-[25px]  leading-[33.89px] 1xs:text-[28px] 1xs:leading-[33.89px] sm:text-[28px] sm:leading-[33.89px]   lg:text-[48px] lg:leading-[55px] xl:text-[55px] xl:leading-[60px]  2xl:text-[80px] 2xl:leading-[85px] ">
+        {/*max-w-[390px] 1xs:max-w-[390px] sm:max-w-[390px] xl:max-w-[1332px] 2xl:max-w-[1776px] h-[170px]  xl:h-[192px]  2xl:h-[255px]  */}
+        {/* text-[34px] leading-10 xs:text-[40px] xs:leading-[48px] md:text-6xl lg:text-[54px] lg:leading-[60px] 2xl:text-[60px] 2xl:leading-[66px] 3xl:text-[79px] 3xl:leading-[88px]" */}
         <span
-          className="bg-gradient-to-r from-blue-500 to-blue-800 text-transparent"
+          className="bg-gradient-to-r from-[#00b2ff] to-[#0057ff] text-transparent"
           style={{ backgroundClip: 'text' }}
         >
           We are a technology platform
         </span>{' '}
-        and data solution provider accelerating digital transformations with
+        and data solution provider accelerating digital transformations with{' '}
         secure and actionable insights .
       </h3>
     </div>
-    // <div className=" text-gradient z-50 absolute w-full bg-white rounded-t-[32px] xl:rounded-t-[52.5px] 2xl:rounded-t-[70px] text-primary -mt-28 xl:-mt-24 2xl:-mt-25 pt-10 xl:pt-18 2xl:pt-24  ">
-    //   {/* pt-10 xl:pt-18 2xl:pt-24  xl:max-w-[1440px] mx-auto 2xl:max-w-[1920px] */}
-    //   <h3 className="px-[20px]  xl:px-[54px] 2xl:px-[72px] max-w-[390px] h-[170px] xl:max-w-[1332px] xl:h-[192px] 2xl:max-w-[1776px] 2xl:h-[255px] text-[25px] sm:text-[28px] sm:leading-[33.89px] sm:font-normal sm:tracking-[-0.03em] xl:text-[55px] xl:leading-[63.75px] xl:font-normal  xl:tracking-[-0.03em] 2xl:text-[80px] 2xl:leading-[85px] 2xl:font-normal 2xl:tracking-[-0.03em] leading-[33.89px] text-[#091F5B] mb-[40px] xl:mb-[72px] 2xl:mb-[96px]">
-    //     {/* sm:max-w-[390px] xl:max-w-[1332px] 2xl:max-w-[1776px] */}
-    //     <span
-    //       className="bg-gradient-to-r from-blue-500 to-blue-800 text-transparent"
-    //       style={{ backgroundClip: 'text' }}
-    //     >
-    //       We are a technology platform
-    //     </span>{' '}
-    //     and data solution provider accelerating digital transformations with
-    //     secure and actionable insights .
-    //   </h3>
-    //   {/* <OurClient></OurClient>
-    //   <OurSolutions></OurSolutions>
-    //   <UseCase></UseCase>
-    //   <WeCreateMessage></WeCreateMessage>
-    //   <Testimonials></Testimonials>
-    //   <Insight></Insight> */}
-    // </div>
   );
 };
 
